@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite a dimensão do quadrado");
+        System.out.println("Digite a dimensão do quadrado e do losangulo");
         int a = teclado.nextInt();
 
         quadrado x = new quadrado(a);
@@ -18,5 +18,10 @@ public class Principal {
             }
             System.out.println(" ");
         }
+        
+	     Losangulo h = new Losangulo(a);
+        h.gera();
+			        
+        
     }
 }
